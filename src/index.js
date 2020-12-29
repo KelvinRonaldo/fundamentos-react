@@ -4,15 +4,17 @@ import './index.css';
 
 import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
+import Fragmento from './components/basicos/Fragmento';
 
 ReactDOM.render(
-	<div>
+	<div id='app'>
 		<Primeiro></Primeiro>
 		<ComParametro
 			titulo='Situação do Aluno'
 			aluno='Kelvin Ronaldo'
-			nota={7.6}
+			nota={ 7.6 }
 		/>
+		<Fragmento />
 	</div>,
 	document.getElementById('root')
 );
