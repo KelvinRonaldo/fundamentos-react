@@ -6,6 +6,7 @@ import ComParametro from './components/basicos/ComParametro';
 import Primeiro from './components/basicos/Primeiro';
 import Card from './components/basicos/layout/Card';
 
+import './App.css';
 
 // export default PERMITE RETORNAR UMA FUNÇÃO ANÔNIMA
 // APENAS export NÃO
@@ -30,26 +31,30 @@ import Card from './components/basicos/layout/Card';
 // DECLARAR A FUNÇÃO COM _ QUE É O MESMO QUE ()
 
 export default _ =>
-	<div id='app'>
+	<div className='App'>
 		<h1>Fundamentos React Arrow</h1>
 
-		<Card titulo='#04 - Desafio Aleatório'>
-			<Aleatorio min={ 10 } max={ 100 } />
-		</Card>
+		<div className='Cards'>
 
-		<Card titulo='#03 - Fragmento'>
-			<Fragmento />
-		</Card>
+			<Card titulo='#04 - Desafio Aleatório'>
+				<Aleatorio min={ 10 } max={ 100 } />
+			</Card>
 
-		<Card titulo='#02 - Com Parâmetro'>
-			<ComParametro
-				titulo='Situação do Aluno'
-				aluno='Kelvin Ronaldo'
-				nota={ 7.6 }
-			/>
-		</Card>
+			<Card titulo='#03 - Fragmento'>
+				<Fragmento />
+			</Card>
 
-		<Card titulo='#01 - Primeiro Componente'>
-			<Primeiro></Primeiro>
-		</Card>
+			<Card titulo='#02 - Com Parâmetro'>
+				<ComParametro
+					titulo='Situação do Aluno'
+					aluno='Kelvin Ronaldo'
+					nota={ 7.6 }
+				/>
+			</Card>
+
+			<Card titulo='#01 - Primeiro Componente'>
+				<Primeiro></Primeiro>
+			</Card>
+
+		</div>
 	</div>;

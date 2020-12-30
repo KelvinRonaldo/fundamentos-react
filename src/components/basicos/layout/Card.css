@@ -3,7 +3,12 @@
 	border: 3px solid #025a5a;
 	border-radius: 10px;
 	overflow: hidden;
-	margin: 25px 0;
+	margin: 15px;
+
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	max-width: 300px;
 }
 
 .Card .Title {
@@ -15,4 +20,5 @@
 	background-color: #efefef;
 	color: #000000;
 	padding: 20px;
+	flex-grow: 1;
 }
