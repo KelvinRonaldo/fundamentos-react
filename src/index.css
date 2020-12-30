@@ -1,4 +1,15 @@
-body{
+body {
+	font-family: Raleway;
 	background-color: #222222;
 	color: #efefef;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+h2, h3 {
+	font-weight: 200;
+	margin: 0;
 }
